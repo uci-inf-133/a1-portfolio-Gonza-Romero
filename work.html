@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="author" content="Gonzalo Romero-Navarrete">
   <meta name="description" content="This is a Personal Portfolio Website">
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- you would link to an external stylesheet here! -->
    <link rel="stylesheet" href="style.css"> 
   <!-- you would also link to Bootstrap here! -->
@@ -12,45 +16,44 @@
   <title>Personal Portfolio 2026</title>
 </head>
 <body>
-    <!--<a href="http://validator.w3.org/check?uri=referer">W3C validator</a>-->
-    <header>
-      <h1>Gonzalo Romero-Navarrete</h1>
-      <p>Welcome to my Portfolio</p>
-    </header>
-
-    <div class="container-fluid">
-      <div class="row">
-
-        <nav class="col-md-3">
-          <!--content to the three pages-->
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="education.html">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="work.html">Work Experience</a>
-            </li>
-          </ul>
-        </nav>
-
-      <main class="col-md-9">
-        <section>
-            <h2>My Work Experience</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, laborum numquam impedit quo voluptate earum cumque, rem ipsum placeat, repellat iure id necessitatibus natus velit accusantium corporis eius rerum vitae!</p>
-        </section>
-      </main>
-    
-      </div>
+  <!--<a href="http://validator.w3.org/check?uri=referer">W3C validator</a>-->
+  <!-- header section -->
+  <header class="site-header">
+    <div class="container text-center">
+      <h1 class="header-title">Gonzalo Romero-Navarrete</h1> 
+      <p class="header-subtitle">Welcome to my Portfolio</p>
     </div>
+  </header>
+  
+  <!-- main contents -->
+  <div class="container-fluid">
+    <div class="row">
+      
+      <!-- sidebar nav -->
+      <nav class="sidebar-nav col-12 col-md-3 col-lg-2">
+        <!-- Navigation buttons using Bootstrap button styling -->
+        <a class="btn btn-secondary rounded-pill nav-button" href="index.html">Home</a>
+        <a class="btn btn-secondary rounded-pill nav-button" href="projects.html">Projects</a>
+        <a class="btn btn-secondary rounded-pill nav-button" href="education.html">Education</a>
+        <a class="btn btn-secondary rounded-pill nav-button" href="work.html">Work Experience</a>
+      </nav>
 
-    <footer>
-      <p>&copy; 2026 Gonzalo Romero-Navarrete</p>
-    </footer>
+      <!-- main contents -->
+      <main class="main-content col-12 col-md-9 col-lg-10">
+        
+        <!-- work experience/filler information -->
+        <section class="work-section">
+          <h2 class="section-heading">My Work Experience</h2>
+          <p class="section-text">
+            I am currently seeking internship opportunities to apply my skills in web development and user interface design.
+          </p>
+    </div>
+  </div>
+  
+  <!-- footer section -->
+  <footer class="site-footer">
+    <p class="footer-text">&copy; 2026 Gonzalo Romero-Navarrete</p>
+  </footer>
+  
 </body>
 </html>

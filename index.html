@@ -6,14 +6,14 @@ WRITTEN BY: Gonzalo Romero-Navarrete
 EMAIL: gromeron@uci.edu
 -->
 
-<!--final upload to canvas would be to go and download as zip file clicking "code" and then "download ZIP"-->
-<!--TODO: read up on lecture slides/docuementation and start implementing first few features to A1: Portfolio Assignment-->
-
-
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Gonzalo Romero-Navarrete">
   <meta name="description" content="This is a Personal Portfolio Website">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- you would link to an external stylesheet here! -->
    <link rel="stylesheet" href="style.css"> 
   <!-- you would also link to Bootstrap here! -->
@@ -21,45 +21,54 @@ EMAIL: gromeron@uci.edu
   <title>Personal Portfolio 2026</title>
 </head>
 <body>
-    <!--<a href="http://validator.w3.org/check?uri=referer">W3C validator</a>-->
-    <header>
-      <h1>Gonzalo Romero-Navarrete</h1>
-      <p>Welcome to my Portfolio</p>
-    </header>
-
-    <div class="container-fluid">
-      <div class="row">
-
-        <nav class="col-md-3">
-          <!--content to the three pages-->
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="education.html">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="work.html">Work Experience</a>
-            </li>
-          </ul>
-        </nav>
-
-      <main class="col-md-9">
-        <section>
-          <h2>About Me: ...</h2>
-          <p>More on Me: ...</p>
-        </section>
-      </main>
-    
-      </div>
+  <!--<a href="http://validator.w3.org/check?uri=referer">W3C validator</a>-->
+  <!-- Header section -->
+   <header class="site-header">
+    <div class="container text-center">
+      <h1 class="header-title">Gonzalo Romero-Navarrete</h1> 
+      <p class="header-subtitle">Welcome to my Portfolio</p>
     </div>
-
-    <footer>
-      <p>&copy; 2026 Gonzalo Romero-Navarrete</p>
-    </footer>
+  </header>
+  
+  <!-- main content area -->
+  <div class="container-fluid">
+    <div class="row">
+      
+      <!-- sidebar nav, advanced feature -->
+      <nav class="sidebar-nav col-12 col-md-3 col-lg-2">
+        <!-- Navigation buttons using Bootstrap button styling -->
+        <a class="btn btn-secondary rounded-pill nav-button" href="index.html">Home</a>
+        <a class="btn btn-secondary rounded-pill nav-button" href="projects.html">Projects</a>
+        <a class="btn btn-secondary rounded-pill nav-button" href="education.html">Education</a>
+        <a class="btn btn-secondary rounded-pill nav-button" href="work.html">Work Experience</a>
+      </nav>
+      
+      <!-- main content -->
+      <main class="main-content col-12 col-md-9 col-lg-10">
+        
+        <!-- about me section -->
+        <secton class="about-section">
+          <!-- Profile Image -->
+          <img src="profilepic.jpg" alt="Profile picture of Gonzalo Romero-Navarrete" class="profile-image">
+          
+          <!-- about me text -->
+          <h3 class="section-heading">About Me:</h3>
+          <p class="about-text">
+            I am a 3rd year <a href="https://www.informatics.uci.edu/" target="_blank" rel="noopener" class="external-link">Informatics</a> student at the University of California Irvine and plan to be a Front-End Developer in the near future.
+            I am currently learning about Front-End Development while understand the best practices and accessbilities changes that need to be made in order for everyone to be able to navigate through a webiste correctly and I will also be taking online courses to deepen
+            my knowledge of Front-End Development
+          </p>
+        </section>
+        
+      </main>
+      
+    </div>
+  </div>
+  
+  <!-- footer section containing one small builtin html feature "&copy" -->
+  <footer class="site-footer">
+    <p class="footer-text">&copy; 2026 Gonzalo Romero-Navarrete</p>
+  </footer>
+  
 </body>
 </html>

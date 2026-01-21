@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="author" content="Gonzalo Romero-Navarrete">
   <meta name="description" content="This is a Personal Portfolio Website">
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- you would link to an external stylesheet here! -->
    <link rel="stylesheet" href="style.css"> 
   <!-- you would also link to Bootstrap here! -->
@@ -12,45 +16,80 @@
   <title>Personal Portfolio 2026</title>
 </head>
 <body>
-    <!--<a href="http://validator.w3.org/check?uri=referer">W3C validator</a>-->
-    <header>
-      <h1>Gonzalo Romero-Navarrete</h1>
-      <p>Welcome to my Portfolio</p>
-    </header>
-
-    <div class="container-fluid">
-      <div class="row">
-
-        <nav class="col-md-3">
-          <!--content to the three pages-->
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="education.html">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="work.html">Work Experience</a>
-            </li>
-          </ul>
-        </nav>
-
-      <main class="col-md-9">
-        <section>
-            <h2>My Projects</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, laborum numquam impedit quo voluptate earum cumque, rem ipsum placeat, repellat iure id necessitatibus natus velit accusantium corporis eius rerum vitae!</p>
-        </section>
-      </main>
-    
-      </div>
+  <!--<a href="http://validator.w3.org/check?uri=referer">W3C validator</a>-->
+  <!-- header section -->
+  <header class="site-header">
+    <div class="container text-center">
+      <h1 class="header-title">Gonzalo Romero-Navarrete</h1> 
+      <p class="header-subtitle">Welcome to my Portfolio</p>
     </div>
+  </header>
+  
+  <!-- main content area -->
+  <div class="container-fluid">
+    <div class="row">
 
-    <footer>
-      <p>&copy; 2026 Gonzalo Romero-Navarrete</p>
-    </footer>
+      <!-- sidebar nav, advanced feature -->
+      <nav class="sidebar-nav col-12 col-md-3 col-lg-2">
+        <!-- Navigation buttons using Bootstrap button styling -->
+         <a class="btn btn-secondary rounded-pill nav-button" href="index.html">Home</a>
+        <a class="btn btn-secondary rounded-pill nav-button" href="projects.html">Projects</a>
+        <a class="btn btn-secondary rounded-pill nav-button" href="education.html">Education</a>
+        <a class="btn btn-secondary rounded-pill nav-button" href="work.html">Work Experience</a>
+      </nav>
+
+      <!-- main content -->
+      <main class="main-content col-12 col-md-9 col-lg-10">
+        
+        <!-- Projects Section -->
+        <section class="projects-section">
+          <h2 class="section-heading">My Projects</h2>
+          
+          <!-- Brief introduction -->
+          <p class="section-text">
+            Here are some projects/course work that I've worked on during my time at UCI currently.
+          </p>
+          
+          <!-- project 1 content -->
+          <div class="content-item">
+            <h3 class="item-title">API Message To Real Time Server</h3>
+            <p class="section-text"><em>ICS 32 | December - March</em></p>
+            <ul class="item-list">
+              <li>I built a real time messager "app" that allowed me to send a message to a live server 
+                or to a person of any choice using a given API key and linking it to my own machine.
+              </li>
+              <li>The key feature for this project was to be able to link and use an external API key to be able to send
+                messages to a live server and then to a person of my choice, all through the terminal.
+              </li>
+              <li>In result of this project, I learned how to properly acquire and use an API key to do extensive things
+                with it in order to further my learning on more python usages.
+              </li>
+            </ul>
+          </div>
+
+          <!-- project 2 content -->
+          <div class="content-item">
+            <h3 class="item-title">Personal Portfolio Website</h3>
+            <p class="section-text"><em>INF 133 | January 2027 - Present</em></p>
+            <ul class="item-list">
+              <li>I am currently working on my first ever personal portfolio(this site) and plan to edit and make further changes to this portfolio once I start to learn more about web development
+                and other key features that I can use to make my site look more appealing.
+              </li>
+              <li>The key feature for this project was that I was able to learn about good html and css practices in order to create a first version of my personal portfolio website and to be able to
+                implement small and some advanced features.
+              </li>
+              <li>In result of this project, I will be able to look back on what I have currently learned and come back to this portfolio with more knowledge in the upcoming months in order to
+                edit and make the site more appealing while also including more information than before.
+              </li>
+            </ul>
+          </div>
+    </div>
+  </div>
+  
+  <!-- footer section as well -->
+  <footer class="site-footer">
+    <p class="footer-text">&copy; 2026 Gonzalo Romero-Navarrete</p>
+  </footer>
+  
 </body>
 </html>
