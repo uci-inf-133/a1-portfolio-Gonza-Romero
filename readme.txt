@@ -17,7 +17,7 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 - 2/1 Advanced feature
 - 2/2 Responsive layout
 - 1/1 Passes validation checks
-- 1/2 Embraces spirit of the assignment
+- 1/2 Embraces spirit of the assignment (1/2 for spirit because of my overall content which I would assume compared to others is not as good or filled in as it should be)
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
