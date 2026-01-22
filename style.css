@@ -6,8 +6,12 @@ body {
     font-style: normal;
 }
 
+/*  the use of naming the heading 1-6 was incase I decided to use 
+    all of them and then not having to then edit each one individually
+    , so decided to ignore this css error that showed up on the css validator*/
 h1, h2, h3, h4, h5, h6 {
     font-family: "Inter Tight", sans-serif;
+    /* ignoring issue in validator since it is actually a real and valid line which the validator thinks it does not exist*/
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -86,7 +90,7 @@ body {
 
 /* about section */
 .about-section {
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 /*  took inspiration from a github portfolio to make picture rounded
@@ -126,7 +130,13 @@ body {
 .projects-section,
 .education-section,
 .work-section {
-    padding: 20px 0;
+    padding: 40px 0;
+}
+
+/*  using this in order to create a default min height since i was having issues with white space showing because of the page having less content,
+    and because I didnt want to lorem all the rest of the content to keep it as real as possible for future use of this portfolio*/
+.work-section {
+    min-height: 600px;
 }
 
 .section-text {
@@ -145,7 +155,7 @@ body {
 
 .footer-text {
     color: #d0d0d0;
-    font-size: 10px;
+    font-size: 13px;
     margin: 0;
 }
 
