@@ -59,7 +59,7 @@ Skip to content link issue that I ignored since although may be taken care, for 
 Headings formatting- Fixed this issue since I skipped from header 1 to header 3, made the change from header 3 to header 2 and issue resolved.
 Ignored issues about title might not describe a document, which each document did have a properly clear title, describing what the document is about.
 P element may be misused, ignoring this since it was specific data about the projects I had done and written about in the project.html file.
-
+-I also ignored the css although it showed red as in having an issue, the the code from the css styling on inter tight google fonts is real and was taken from the embeded code in the site itself
 
 
 4. How long, in hours, did it take you to complete this assignment?
